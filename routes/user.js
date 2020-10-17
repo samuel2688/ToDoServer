@@ -13,7 +13,7 @@ userRoutes.get("/api/users", (req, res) => {
     });
 });
 
-userRoutes.post("/api/register", (req, res) => {
+userRoutes.post("/api/register/", (req, res) => {
   const { first_name, last_name, email, age, password } = req.body;
   return db.user
     .create({ first_name, last_name, age, email, password })
