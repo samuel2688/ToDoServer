@@ -1,3 +1,4 @@
+require("dotenv").config(); //always make sure that it is imported first
 import express from "express";
 import bodyParser from "body-parser";
 import { routes } from "./routes";
